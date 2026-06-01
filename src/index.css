@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-serif: "Poppins", serif;
+
+  /* Custom requested organic color palette */
+  --color-jungle_teal: #007f5f;
+  --color-jungle_teal-100: #001a13;
+  --color-jungle_teal-200: #003326;
+  --color-jungle_teal-300: #004d39;
+  --color-jungle_teal-400: #00664d;
+  --color-jungle_teal-500: #007f5f;
+  --color-jungle_teal-600: #00cc99;
+  --color-jungle_teal-700: #1affc6;
+  --color-jungle_teal-800: #66ffd9;
+  --color-jungle_teal-900: #b3ffec;
+
+  --color-jungle-teal: #007f5f;
+  --color-jungle-teal-100: #001a13;
+  --color-jungle-teal-200: #003326;
+  --color-jungle-teal-300: #004d39;
+  --color-jungle-teal-400: #00664d;
+  --color-jungle-teal-500: #007f5f;
+  --color-jungle-teal-600: #00cc99;
+  --color-jungle-teal-700: #1affc6;
+  --color-jungle-teal-800: #66ffd9;
+  --color-jungle-teal-900: #b3ffec;
+
+  --color-sea_green: #2b9348;
+  --color-sea_green-100: #081d0e;
+  --color-sea_green-200: #113a1d;
+  --color-sea_green-300: #19582b;
+  --color-sea_green-400: #227539;
+  --color-sea_green-500: #2b9348;
+  --color-sea_green-600: #39c460;
+  --color-sea_green-700: #6ad488;
+  --color-sea_green-800: #9be2af;
+  --color-sea_green-900: #cdf1d7;
+
+  --color-sea-green: #2b9348;
+  --color-sea-green-100: #081d0e;
+  --color-sea-green-200: #113a1d;
+  --color-sea-green-300: #19582b;
+  --color-sea-green-400: #227539;
+  --color-sea-green-500: #2b9348;
+  --color-sea-green-600: #39c460;
+  --color-sea-green-700: #6ad488;
+  --color-sea-green-800: #9be2af;
+  --color-sea-green-900: #cdf1d7;
+
+  --color-bright_fern: #55a630;
+  --color-bright_fern-100: #11210a;
+  --color-bright_fern-200: #224213;
+  --color-bright_fern-300: #33641d;
+  --color-bright_fern-400: #448527;
+  --color-bright_fern-500: #55a630;
+  --color-bright_fern-600: #71ca48;
+  --color-bright_fern-700: #94d775;
+  --color-bright_fern-800: #b8e4a3;
+  --color-bright_fern-900: #dbf2d1;
+
+  --color-bright-fern: #55a630;
+  --color-bright-fern-100: #11210a;
+  --color-bright-fern-200: #224213;
+  --color-bright-fern-300: #33641d;
+  --color-bright-fern-400: #448527;
+  --color-bright-fern-500: #55a630;
+  --color-bright-fern-600: #71ca48;
+  --color-bright-fern-700: #94d775;
+  --color-bright-fern-800: #b8e4a3;
+  --color-bright-fern-900: #dbf2d1;
+
+  --color-lime_moss: #80b918;
+  --color-lime_moss-100: #1a2505;
+  --color-lime_moss-200: #334a0a;
+  --color-lime_moss-300: #4d6f0e;
+  --color-lime_moss-400: #679413;
+  --color-lime_moss-500: #80b918;
+  --color-lime_moss-600: #a2e32a;
+  --color-lime_moss-700: #baea5f;
+  --color-lime_moss-800: #d1f194;
+  --color-lime_moss-900: #e8f8ca;
+
+  --color-lime-moss: #80b918;
+  --color-lime-moss-100: #1a2505;
+  --color-lime-moss-200: #334a0a;
+  --color-lime-moss-300: #4d6f0e;
+  --color-lime-moss-400: #679413;
+  --color-lime-moss-500: #80b918;
+  --color-lime-moss-600: #a2e32a;
+  --color-lime-moss-700: #baea5f;
+  --color-lime-moss-800: #d1f194;
+  --color-lime-moss-900: #e8f8ca;
+
+  --color-yellow_green: #aacc00;
+  --color-yellow_green-100: #222900;
+  --color-yellow_green-200: #445200;
+  --color-yellow_green-300: #667a00;
+  --color-yellow_green-400: #88a300;
+  --color-yellow_green-500: #aacc00;
+  --color-yellow_green-600: #d6ff0a;
+  --color-yellow_green-700: #e0ff47;
+  --color-yellow_green-800: #ebff85;
+  --color-yellow_green-900: #f5ffc2;
+
+  --color-yellow-green: #aacc00;
+  --color-yellow-green-100: #222900;
+  --color-yellow-green-200: #445200;
+  --color-yellow-green-300: #667a00;
+  --color-yellow-green-400: #88a300;
+  --color-yellow-green-500: #aacc00;
+  --color-yellow-green-600: #d6ff0a;
+  --color-yellow-green-700: #e0ff47;
+  --color-yellow-green-800: #ebff85;
+  --color-yellow-green-900: #f5ffc2;
+
+  --color-lemon_lime: #bfd200;
+  --color-lemon_lime-100: #262a00;
+  --color-lemon_lime-200: #4d5400;
+  --color-lemon_lime-300: #737d00;
+  --color-lemon_lime-400: #99a700;
+  --color-lemon_lime-500: #bfd200;
+  --color-lemon_lime-600: #ebff0e;
+  --color-lemon_lime-700: #f0ff4a;
+  --color-lemon_lime-800: #f5ff87;
+  --color-lemon_lime-900: #faffc3;
+
+  --color-lemon-lime: #bfd200;
+  --color-lemon-lime-100: #262a00;
+  --color-lemon-lime-200: #4d5400;
+  --color-lemon-lime-300: #737d00;
+  --color-lemon-lime-400: #99a700;
+  --color-lemon-lime-500: #bfd200;
+  --color-lemon-lime-600: #ebff0e;
+  --color-lemon-lime-700: #f0ff4a;
+  --color-lemon-lime-800: #f5ff87;
+  --color-lemon-lime-900: #faffc3;
+
+  --color-lemon_lime_alt1: #d4d700;
+  --color-lemon_lime_alt1-100: #2a2b00;
+  --color-lemon_lime_alt1-200: #545600;
+  --color-lemon_lime_alt1-300: #7e8100;
+  --color-lemon_lime_alt1-400: #a9ab00;
+  --color-lemon_lime_alt1-500: #d4d700;
+  --color-lemon_lime_alt1-600: #fbff12;
+  --color-lemon_lime_alt1-700: #fcff4e;
+  --color-lemon_lime_alt1-800: #fdff89;
+  --color-lemon_lime_alt1-900: #feffc4;
+
+  --color-lemon_lime_alt2: #dddf00;
+  --color-lemon_lime_alt2-100: #2c2d00;
+  --color-lemon_lime_alt2-200: #585a00;
+  --color-lemon_lime_alt2-300: #848700;
+  --color-lemon_lime_alt2-400: #b1b400;
+  --color-lemon_lime_alt2-500: #dddf00;
+  --color-lemon_lime_alt2-600: #fbff1b;
+  --color-lemon_lime_alt2-700: #fcff54;
+  --color-lemon_lime_alt2-800: #fdff8d;
+  --color-lemon_lime_alt2-900: #feffc6;
+
+  --color-yellow: #eeef20;
+  --color-yellow-100: #333304;
+  --color-yellow-200: #656507;
+  --color-yellow-300: #98980b;
+  --color-yellow-400: #caca0e;
+  --color-yellow-500: #eeef20;
+  --color-yellow-600: #f3f34c;
+  --color-yellow-700: #f6f679;
+  --color-yellow-800: #f9f9a5;
+  --color-yellow-900: #fcfcd2;
+
+  --color-yellow_bright: #ffff3f;
+  --color-yellow_bright-100: #3f3f00;
+  --color-yellow_bright-200: #7e7e00;
+  --color-yellow_bright-300: #bebe00;
+  --color-yellow_bright-400: #fdfd00;
+  --color-yellow_bright-500: #ffff3f;
+  --color-yellow_bright-600: #ffff64;
+  --color-yellow_bright-700: #ffff8b;
+  --color-yellow_bright-800: #ffffb1;
+  --color-yellow_bright-900: #ffffd8;
+
+  --color-primary: #007f5f;
+  --color-primary-light: #2b9348;
+  --color-primary-dark: #004d39;
+  --color-primary-container: #00664d;
+
+  --color-veg-brand: #2b9348;
+  --color-cow-brand: #6d4c41;
+  --color-quail-brand: #e65100;
+
+  --spacing-margin-mobile: 1.25rem;
+  --spacing-margin-desktop: 2.5rem;
+  --spacing-gutter: 1.5rem;
+
+  --spacing-xs: 0.5rem;   /* 8px */
+  --spacing-sm: 0.75rem;  /* 12px */
+  --spacing-md: 1.5rem;   /* 24px */
+  --spacing-lg: 3rem;     /* 48px */
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #f8faf6;
+  color: #191c1a;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f3f0;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd3c6;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a3b09d;
+}
+
+/* ==========================================
+   INTERACTIVE ORDER TIMELINE STYLING
+   ========================================== */
+#order-progress-timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+#order-progress-timeline .timeline-step-node {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+  cursor: pointer;
+}
+
+#order-progress-timeline .step-circle-badge {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#order-progress-timeline .timeline-step-node.active-stage .step-circle-badge {
+  transform: scale(1.1);
+  box-shadow: 0 0 0 6px rgba(43, 147, 72, 0.15);
+}
+
+#order-progress-timeline .timeline-step-node.completed-stage .step-circle-badge {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+#order-progress-timeline .timeline-step-node.cancelled-stage .step-circle-badge {
+  box-shadow: 0 0 0 6px rgba(239, 68, 68, 0.15);
+}
+
+#order-progress-timeline .step-label-title {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 11px;
+  color: #64748b;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+#order-progress-timeline .timeline-step-node.active-stage .step-label-title {
+  color: #1e293b;
+}
+
+#order-progress-timeline .timeline-step-node.completed-stage .step-label-title {
+  color: #0d9488;
+}
+
+#order-progress-timeline .timeline-step-node.cancelled-stage .step-label-title {
+  color: #dc2626;
+}
+
+#order-progress-line-bar {
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  right: 22px;
+  height: 4px;
+  background-color: #f1f5f9;
+  z-index: 1;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+#order-progress-fill-line {
+  height: 100%;
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+

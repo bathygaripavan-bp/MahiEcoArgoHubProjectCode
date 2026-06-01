@@ -1,0 +1,6 @@
+{
+  "name": "MahiEcoArgoHub",
+  "description": "Premium E-Commerce Platform for Sustainable Agriculture - Connecting consumers directly in Hyderabad with ethical Dairy (Cow Farming), organic Veggies (Vegetable Farming), and nutrition-dense Quail (Kamju Pittala)",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
